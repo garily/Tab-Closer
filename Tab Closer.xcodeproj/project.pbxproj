@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC4302AF236D1FB700C1F1F6 /* TabCloserIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = BC4302AE236D1FB700C1F1F6 /* TabCloserIcon.pdf */; };
 		BC464B95236BBE0500DF4A4F /* Tab_Closer.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = BC464B94236BBE0500DF4A4F /* Tab_Closer.entitlements */; };
 		BC464B97236BBE0500DF4A4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC464B96236BBE0500DF4A4F /* AppDelegate.swift */; };
 		BC464B9A236BBE0500DF4A4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC464B98236BBE0500DF4A4F /* Main.storyboard */; };
@@ -17,8 +18,6 @@
 		BC464BAD236BBE0600DF4A4F /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC464BAC236BBE0600DF4A4F /* SafariExtensionHandler.swift */; };
 		BC464BAF236BBE0600DF4A4F /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC464BAE236BBE0600DF4A4F /* SafariExtensionViewController.swift */; };
 		BC464BB2236BBE0600DF4A4F /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC464BB0236BBE0600DF4A4F /* SafariExtensionViewController.xib */; };
-		BC464BB7236BBE0600DF4A4F /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = BC464BB6236BBE0600DF4A4F /* ToolbarItemIcon.pdf */; };
-		BC464BC2236BBE5C00DF4A4F /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = BC464BB4236BBE0600DF4A4F /* script.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +45,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BC4302AE236D1FB700C1F1F6 /* TabCloserIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = TabCloserIcon.pdf; sourceTree = "<group>"; };
 		BC464B91236BBE0500DF4A4F /* Tab Closer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tab Closer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC464B94236BBE0500DF4A4F /* Tab_Closer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tab_Closer.entitlements; sourceTree = "<group>"; };
 		BC464B96236BBE0500DF4A4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,8 +59,6 @@
 		BC464BAE236BBE0600DF4A4F /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
 		BC464BB1236BBE0600DF4A4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
 		BC464BB3236BBE0600DF4A4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BC464BB4236BBE0600DF4A4F /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
-		BC464BB6236BBE0600DF4A4F /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
 		BC464BB8236BBE0600DF4A4F /* Tab_Closer_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tab_Closer_Extension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,12 +124,11 @@
 		BC464BAB236BBE0600DF4A4F /* Tab Closer Extension */ = {
 			isa = PBXGroup;
 			children = (
+				BC4302AE236D1FB700C1F1F6 /* TabCloserIcon.pdf */,
 				BC464BAC236BBE0600DF4A4F /* SafariExtensionHandler.swift */,
 				BC464BB0236BBE0600DF4A4F /* SafariExtensionViewController.xib */,
 				BC464BAE236BBE0600DF4A4F /* SafariExtensionViewController.swift */,
 				BC464BB3236BBE0600DF4A4F /* Info.plist */,
-				BC464BB4236BBE0600DF4A4F /* script.js */,
-				BC464BB6236BBE0600DF4A4F /* ToolbarItemIcon.pdf */,
 				BC464BB8236BBE0600DF4A4F /* Tab_Closer_Extension.entitlements */,
 			);
 			path = "Tab Closer Extension";
@@ -228,8 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC464BB7236BBE0600DF4A4F /* ToolbarItemIcon.pdf in Resources */,
-				BC464BC2236BBE5C00DF4A4F /* script.js in Resources */,
+				BC4302AF236D1FB700C1F1F6 /* TabCloserIcon.pdf in Resources */,
 				BC464BB2236BBE0600DF4A4F /* SafariExtensionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,7 +438,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = TabCloserIcon;
 				CODE_SIGN_ENTITLEMENTS = "Tab Closer/Tab_Closer.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -463,7 +459,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = TabCloserIcon;
 				CODE_SIGN_ENTITLEMENTS = "Tab Closer/Tab_Closer.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;

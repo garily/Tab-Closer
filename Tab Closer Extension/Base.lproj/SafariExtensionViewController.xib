@@ -34,12 +34,9 @@
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system" size="36"/>
                     </buttonCell>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="closeToLeft" value="NO"/>
-                    </userDefinedRuntimeAttributes>
                     <accessibility description="Closes all tabs to the right of the current tab"/>
                     <connections>
-                        <action selector="closeTabs:" target="-2" id="vFK-9B-Jvv"/>
+                        <action selector="closeTabsToRight:" target="-2" id="QG3-ui-K63"/>
                     </connections>
                 </button>
                 <button identifier="btnCloseLeft" toolTip="Close all tabs to the left" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="95k-eO-fkD">
@@ -56,7 +53,7 @@
                     </userDefinedRuntimeAttributes>
                     <accessibility description="Closes all tabs to the left of the current tab"/>
                     <connections>
-                        <action selector="closeTabs:" target="-2" id="LNi-GU-ZVV"/>
+                        <action selector="closeTabsToLeft:" target="-2" id="rnT-hw-dLq"/>
                     </connections>
                 </button>
             </subviews>

@@ -37,7 +37,7 @@
 			<key>Identifier</key>
 			<string>Tab Closer</string>
 			<key>Image</key>
-			<string>ToolbarItemIcon.pdf</string>
+			<string>TabCloserIcon.pdf</string>
 			<key>Label</key>
 			<string>Tab Closer</string>
 		</dict>

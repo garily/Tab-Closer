@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Tab Closer
 //
-//  Created by Gary Li on 10/31/19.
+//  Created by Ruoyu Li on 10/31/19.
 //  Copyright © 2019 Ruoyu Li. All rights reserved.
 //
 

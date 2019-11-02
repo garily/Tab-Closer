@@ -107,8 +107,8 @@
                                 <rect key="frame" x="0.0" y="34" width="480" height="250"/>
                                 <subviews>
                                     <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FWV-e2-WQh" userLabel="IconView">
-                                        <rect key="frame" x="224" y="121" width="32" height="129"/>
-                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" image="NSApplicationIcon" id="Hhb-TZ-Dhg"/>
+                                        <rect key="frame" x="231" y="121" width="18" height="129"/>
+                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" image="TabCloserIcon" id="Hhb-TZ-Dhg"/>
                                     </imageView>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EB0-ac-UZR">
                                         <rect key="frame" x="206" y="63" width="68" height="16"/>
@@ -161,6 +161,6 @@ DQ
         </scene>
     </scenes>
     <resources>
-        <image name="NSApplicationIcon" width="32" height="32"/>
+        <image name="TabCloserIcon" width="18" height="18"/>
     </resources>
 </document>
