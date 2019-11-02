@@ -18,6 +18,22 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
     }
     
     override func toolbarItemClicked(in window: SFSafariWindow) {
+//        window.getActiveTab { (activeTab: SFSafariTab?) in
+//            if let _activeTab = activeTab {
+//                window.getAllTabs { (allTabs: [SFSafariTab]) in
+//                    for tab in allTabs.reversed() {
+//                        if tab == _activeTab {
+//                            break;
+//                        }
+//                        tab.close();
+//                    }
+//                }
+//            }
+//            else {
+//                NSLog("No active tab found, aborting attempt to close tabs")
+//                return
+//            }
+//        }
         // This method will be called when your toolbar item is clicked.
         NSLog("The extension's toolbar item was clicked")
     }

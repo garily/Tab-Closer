@@ -14,20 +14,65 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="c22-O7-iKe">
-            <rect key="frame" x="0.0" y="0.0" width="330" height="119"/>
+            <rect key="frame" x="0.0" y="0.0" width="200" height="83"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Iy-aV-wGF">
-                    <rect key="frame" x="103" y="82" width="124" height="17"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Tab Closer" id="2Ec-kd-q2K">
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4Iy-aV-wGF" customClass="I">
+                    <rect key="frame" x="63" y="59" width="74" height="16"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Tab Closer" id="2Ec-kd-q2K">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <button identifier="btnCloseRight" toolTip="Close all tabs to the right" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tml-i3-6Ki">
+                    <rect key="frame" x="100" y="0.0" width="100" height="51"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="eyf-Th-7BR"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" title="↦" alternateTitle="|-&gt;" bezelStyle="shadowlessSquare" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" inset="2" id="QNo-Sv-boU">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system" size="36"/>
+                    </buttonCell>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="closeToLeft" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                    <accessibility description="Closes all tabs to the right of the current tab"/>
+                    <connections>
+                        <action selector="closeTabs:" target="-2" id="vFK-9B-Jvv"/>
+                    </connections>
+                </button>
+                <button identifier="btnCloseLeft" toolTip="Close all tabs to the left" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="95k-eO-fkD">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="51"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="h9E-ws-juQ"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" title="↤" alternateTitle="&lt;-|" bezelStyle="shadowlessSquare" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" inset="2" id="FOW-x8-YkQ">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system" size="36"/>
+                    </buttonCell>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="closeToLeft" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <accessibility description="Closes all tabs to the left of the current tab"/>
+                    <connections>
+                        <action selector="closeTabs:" target="-2" id="LNi-GU-ZVV"/>
+                    </connections>
+                </button>
             </subviews>
-            <point key="canvasLocation" x="139" y="155"/>
+            <constraints>
+                <constraint firstItem="tml-i3-6Ki" firstAttribute="top" secondItem="4Iy-aV-wGF" secondAttribute="bottom" constant="8" id="3Ec-15-fpw"/>
+                <constraint firstItem="4Iy-aV-wGF" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="65" id="FLm-y0-5Od"/>
+                <constraint firstItem="4Iy-aV-wGF" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="8" id="OEl-hG-eBu"/>
+                <constraint firstAttribute="trailing" secondItem="tml-i3-6Ki" secondAttribute="trailing" id="PEk-0M-aLU"/>
+                <constraint firstAttribute="bottom" secondItem="95k-eO-fkD" secondAttribute="bottom" id="ajm-rR-n66"/>
+                <constraint firstItem="4Iy-aV-wGF" firstAttribute="centerX" secondItem="c22-O7-iKe" secondAttribute="centerX" id="bQ4-gE-Qjr"/>
+                <constraint firstAttribute="bottom" secondItem="tml-i3-6Ki" secondAttribute="bottom" id="iNR-eR-f1M"/>
+                <constraint firstItem="95k-eO-fkD" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="qWx-Yo-jIz"/>
+                <constraint firstItem="tml-i3-6Ki" firstAttribute="leading" secondItem="95k-eO-fkD" secondAttribute="trailing" id="xWA-qh-yrH"/>
+            </constraints>
+            <point key="canvasLocation" x="126" y="144"/>
         </customView>
+        <userDefaultsController representsSharedInstance="YES" id="O0u-QQ-3yP"/>
     </objects>
 </document>

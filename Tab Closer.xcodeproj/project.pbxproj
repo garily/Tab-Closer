@@ -127,8 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				BC464BAC236BBE0600DF4A4F /* SafariExtensionHandler.swift */,
-				BC464BAE236BBE0600DF4A4F /* SafariExtensionViewController.swift */,
 				BC464BB0236BBE0600DF4A4F /* SafariExtensionViewController.xib */,
+				BC464BAE236BBE0600DF4A4F /* SafariExtensionViewController.swift */,
 				BC464BB3236BBE0600DF4A4F /* Info.plist */,
 				BC464BB4236BBE0600DF4A4F /* script.js */,
 				BC464BB6236BBE0600DF4A4F /* ToolbarItemIcon.pdf */,
