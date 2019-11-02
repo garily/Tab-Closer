@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC42BBC0236D494A00C0C115 /* TabCloserIcon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = BC42BBBF236D494A00C0C115 /* TabCloserIcon.iconset */; };
+		BC42BBC4236D4A4100C0C115 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC464B9D236BBE0600DF4A4F /* Assets.xcassets */; };
 		BC4302AF236D1FB700C1F1F6 /* TabCloserIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = BC4302AE236D1FB700C1F1F6 /* TabCloserIcon.pdf */; };
 		BC464B95236BBE0500DF4A4F /* Tab_Closer.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = BC464B94236BBE0500DF4A4F /* Tab_Closer.entitlements */; };
 		BC464B97236BBE0500DF4A4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC464B96236BBE0500DF4A4F /* AppDelegate.swift */; };
@@ -45,6 +47,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BC42BBBF236D494A00C0C115 /* TabCloserIcon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = TabCloserIcon.iconset; sourceTree = "<group>"; };
 		BC4302AE236D1FB700C1F1F6 /* TabCloserIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = TabCloserIcon.pdf; sourceTree = "<group>"; };
 		BC464B91236BBE0500DF4A4F /* Tab Closer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tab Closer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC464B94236BBE0500DF4A4F /* Tab_Closer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tab_Closer.entitlements; sourceTree = "<group>"; };
@@ -107,6 +110,7 @@
 				BC464B96236BBE0500DF4A4F /* AppDelegate.swift */,
 				BC464B98236BBE0500DF4A4F /* Main.storyboard */,
 				BC464B9B236BBE0500DF4A4F /* ViewController.swift */,
+				BC42BBBF236D494A00C0C115 /* TabCloserIcon.iconset */,
 				BC464B9D236BBE0600DF4A4F /* Assets.xcassets */,
 				BC464B9F236BBE0600DF4A4F /* Info.plist */,
 			);
@@ -215,6 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC42BBC0236D494A00C0C115 /* TabCloserIcon.iconset in Resources */,
 				BC464B95236BBE0500DF4A4F /* Tab_Closer.entitlements in Resources */,
 				BC464B9E236BBE0600DF4A4F /* Assets.xcassets in Resources */,
 				BC464B9A236BBE0500DF4A4F /* Main.storyboard in Resources */,
@@ -226,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC4302AF236D1FB700C1F1F6 /* TabCloserIcon.pdf in Resources */,
+				BC42BBC4236D4A4100C0C115 /* Assets.xcassets in Resources */,
 				BC464BB2236BBE0600DF4A4F /* SafariExtensionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,7 +413,8 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "me.garyli.Tab-Closer-Extension";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = me.garyli.tabcloser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -427,7 +434,8 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "me.garyli.Tab-Closer-Extension";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = me.garyli.tabcloser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -449,7 +457,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "me.garyli.Tab-Closer";
+				PRODUCT_BUNDLE_IDENTIFIER = me.garyli.tabcloser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -470,7 +478,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "me.garyli.Tab-Closer";
+				PRODUCT_BUNDLE_IDENTIFIER = me.garyli.tabcloser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
